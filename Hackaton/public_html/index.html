@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 и CSS3 сайт</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/cssModalWindow.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jsSlowScroll.js"></script>
+  <script src="js/modalWindow.js"></script>
+  <script src="js/jsMainCommands.js"></script>
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>PROsto</span>
+    </div>            </nav>
+
+            <div class="header-content">
+
+                <div class="header-desc">
+                    <h1 class="Header_title">Вернись на главную страницу</h1>
+
+                    <div class="header_text">
+                        <p>Сообщите помощнику, что хотите вернуться на главную страницу</p>
+
+                        <a href="#" class="header_btn_bot">вызвать бота</a>
+                    </div>
+
+                </div>
+
+                <div class="header-photo">
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        
+
+    <div id="about">
+      <a href="#" title="Услуги" onclick="slowScroll('#main')">Услуги</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+             <a href="job.html" onclick="slowScroll('#job')" title="Вакансии">Вакансии</a>
+        <a href="profile.html" onclick="slowScroll('#profile')" title="Профиль">Профиль</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Программирование</h1>
+    <h3>это стиль  жизни!</h3>
+     <h4>Узнай больше, </h4>
+      <h5>будь лучше.</h5>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Наши услуги помогут вам!</h2>
+      <span>Большой выбор всего, что может вам пригодиться</span>
+    </div>
+    <div class="text">
+      <span>PROsto -это образовательная среда,в которой ваш процесс обучения основан на реальных ситуациях. Вы учитесь программированию и с первого урока пишете код; на занятиях по Web-дизайну — работаете с реальными макетами, а на уроках английского сразу начнёте разговаривать.</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Преимущества</h2>
+    <h4>с нами все проще</h4>
+
+    <div class="img">
+      <img src="https://avatars.mds.yandex.net/get-zen_doc/1860621/pub_5df6b90d433ecc00b17def4a_5df6b922fe289100b094e254/scale_1200" alt="">
+      <span>Программирование на Java </span>
+    </div>
+    <div class="img">
+      <img src="https://i.morioh.com/200623/94edb7a8.jpg" alt="">
+      <span>Работа со строками в Python</span>
+    </div>
+    <div class="img">
+      <img src="https://www.keldaz.com/images/csharpdad90d06-1c10-4460-8f22-fe4ce25aedfd.jpg" alt="">
+      <span>Программирование на C++/C#</span>
+    </div>
+    <div class="img">
+      <img src="https://thenew.org/app/uploads/2019/07/webdesignmyth-1200x900.jpg" alt="">
+      <span>Уроки web-разработки</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Напиши нам</h5></center>
+    <form id="form_input">
+      <label for="name">ФИО<span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта<span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+                        <label for="phone">Телефон<span>*</span></label><br>
+                        <input type="text" placeholder="Введите телефон" name="phone" id="phone"><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>В разработке</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>В разработке</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть</span>
+      <p>В разработке</p>
+    </div>
+  </div>
+      
+   <button type="button" class="btnOpen" onclick="modal('myModal')">Голосовой помощник</button>
+	<div id="myModal" class="modal">
+		<div class="modalContent">
+			<div class="modalHeader">Голосовой помощник
+				<span class="modalClose" data-close="true">&times;</span>
+				
+			</div>
+			<div class="modalBody">
+					<button type="button" onclick="talk()" class="btnAction btnPrimary" >Команды</button>					
+                                        <button type="button"  onclick="speech()" class="btnAction btnPrimary" >Говорить</button>
+			</div>
+			<div class="modalFooter">
+                            
+ 				<div>
+					<button type="button" class="btnAction" data-close="true">Закрыть окно</button>
+
+
+				</div>
+			</div>
+		</div>
+	</div> 
+</body>
+</html>
+

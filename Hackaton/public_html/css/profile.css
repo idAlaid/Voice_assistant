@@ -1,0 +1,56 @@
+#pr {
+  width: 100%;
+  background-image: url(https://slivysklad.com/proxy.php?image=https%3A%2F%2Favatars.mds.yandex.net%2Fget-zen_doc%2F1533968%2Fpub_5df1ff3d43863f00ad70439d_5df202d1028d6800b057e7b2%2Fscale_1200&hash=a6f45f64035b054a4c4aee878039c1ef);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 300px) {
+  #pr {
+    font-size: 3em;
+    height: 70px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+  #pr {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  #pr {
+    font-size: 1.3em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  #pr {
+    font-size: 0.9em;
+  }
+}
+
+#pr h1 {
+  padding-top: 20%;
+}
+
+#pr h3 h4 h5 {
+  color: #ccc;
+}
+
+@media (min-width: 300px){
+    #contacts {
+        height: 500px; 
+    }
+  
+}
+#form_input label {
+  margin-bottom:  10px;
+}
+#contacts h2  { color: #4f4f4f}

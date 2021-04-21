@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="css/main.css">
+         <link href="css/profile.css" rel="stylesheet" type="text/css"/>        
+         <link href="css/cssModalWindow.css" rel="stylesheet" type="text/css"/>
+         <script src="js/modalWindow.js"></script>
+         <script src="js/jsJobProfileCommands.js"></script>
+    </head>
+    <body>
+        <header>
+     <div id="logo" onclick="slowScroll('#top')">
+      <span>PROsto</span>
+    </div>
+             <div id="about">
+      <a href="http://localhost:8383/Hackaton/index.html" title="Главная" onclick="slowScroll('#main')">Главная</a>
+       <a href="job.html" onclick="slowScroll('#job')" title="Вакансии">Вакансии</a>
+        <a href="profile.html" onclick="slowScroll('#profile')" title="Профиль">Профиль</a>
+    </div>
+ 
+  </header>
+        <div id="pr">
+    
+  </div>
+     <div id="contacts">
+      <center><h2>Что бы узнать информацию о вакансиях, оставьте заявку мы с вами свяжемся</h2></center>   
+      <center><h5>Заявка:</h5></center> 
+    
+    <form id="form_input">
+      <label for="name">ФИО<span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта<span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+                        <label for="phone">Телефон<span>*</span></label><br>
+                        <input type="text" placeholder="Введите телефон" name="phone" id="phone"><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+         <div id="faq">
+    <div>
+      <span class="title">Оплата</span><br>
+      <span class="heading">Как будет проходит оплата?</span>
+      <p>В разработке</p>
+    </div>
+    <div>
+      <span class="title">Информация</span><br>
+      <span class="heading">Что входит в услуги сервиса</span>
+      <p>В разработке</p>
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Какие гарантии есть</span>
+      <p>В разработке</p>
+    </div>
+  </div>
+        <button type="button" class="btnOpen" onclick="modal('myModal')">Голосовой помощник</button>
+	<div id="myModal" class="modal">
+		<div class="modalContent">
+			<div class="modalHeader">Голосовой помощник
+				<span class="modalClose" data-close="true">&times;</span>
+				
+			</div>
+			<div class="modalBody">
+					<button type="button" onclick="talk()" class="btnAction btnPrimary" >Команды</button>					
+                                        <button type="button"  onclick="speech()" class="btnAction btnPrimary" >Говорить</button>
+			</div>
+			<div class="modalFooter">
+                            
+ 				<div>
+					<button type="button" class="btnAction" data-close="true">Закрыть окно</button>
+
+
+				</div>
+			</div>
+		</div>
+	</div> 
+    </body>
+</html>
